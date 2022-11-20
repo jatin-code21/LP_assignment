@@ -1,7 +1,5 @@
-
 #include<bits/stdc++.h>
 using namespace std;
-
 
 int pageFaults(int pages[], int n, int capacity)
 {
