@@ -18,8 +18,7 @@ void *writer(void *wno)
     sem_wait(&wrt);
     cnt = cnt*2;
     printf("Writer %d modified cnt to %d\n",(*((int *)wno)),cnt);
-    sem_post(&wrt);
-
+    sem_post(&wrt); // releasing the writer lock
 }
 void *reader(void *rno)
 {   
